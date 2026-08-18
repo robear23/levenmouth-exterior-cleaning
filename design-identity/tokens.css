@@ -1,0 +1,137 @@
+/* ============================================================
+   Design Identity — Noble Exterior Cleaning Services
+   Source: https://nobleexteriorcleaningservices.co.uk/
+   Extracted: 2026-08-17
+   Aesthetic: Corporate (warm/earthy trade-services variant)
+   ============================================================ */
+
+/* Google Fonts import — real, matches site's actual loaded weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+
+  /* ── Colors: Brand (olive-gold — single hue family) ─────── */
+  --color-primary:       #ACAD28;
+  --color-primary-dark:  #838433;
+  --color-primary-light: #E9EABE; /* inferred */
+  --color-secondary:     #909431;
+  --color-accent:        #FFB800;
+
+  /* ── Colors: Neutral Scale (all real, extracted) ────────── */
+  --color-neutral-50:  #FBFBF8;
+  --color-neutral-100: #FAF5E5;
+  --color-neutral-200: #F0E6C5;
+  --color-neutral-300: #D8DEE7;
+  --color-neutral-400: #98A3B2;
+  --color-neutral-500: #646360;
+  --color-neutral-600: #4A4A4A;
+  --color-neutral-700: #3F3F3F;
+  --color-neutral-800: #2C2C2C;
+  --color-neutral-900: #141004;
+
+  /* ── Colors: Semantic (inferred — not present on-site) ──── */
+  --color-success: #16A34A; /* inferred */
+  --color-warning: #D97706; /* inferred */
+  --color-error:   #DC2626; /* inferred */
+  --color-info:    #2563EB; /* inferred */
+
+  /* ── Colors: Surface ─────────────────────────────────────── */
+  --color-surface:         #FBFBF8;
+  --color-surface-raised:  #FFFFFF;
+  --color-surface-overlay: #FFFFFF; /* inferred */
+
+  /* ── Colors: Dark card (bespoke component, not dark mode) ── */
+  --color-dark-surface:      #151B26;
+  --color-dark-border:       #2D3748;
+  --color-dark-text:         #FFFFFF;
+  --color-dark-text-body:    #D8DEE7;
+  --color-dark-text-muted:   #98A3B2;
+  --color-dark-dot-inactive: #596274;
+
+  /* ── Colors: Third-party (WhatsApp widget, not brand) ────── */
+  --color-whatsapp: #25D366;
+
+  /* ── Typography: Font Families ──────────────────────────── */
+  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-body:    'Poppins', system-ui, -apple-system, sans-serif;
+  --font-mono:    'Cascadia Code', 'Fira Code', monospace; /* inferred */
+  --font-theme-fallback-heading: 'EB Garamond', serif; /* Astra default, superseded by Poppins */
+  --font-theme-fallback-body:    'IBM Plex Sans', sans-serif; /* Astra default, superseded by Poppins */
+
+  /* ── Typography: Font Sizes ─────────────────────────────── */
+  --text-xs:   0.75rem;   /* 12px — real */
+  --text-sm:   0.875rem;  /* 14px — real */
+  --text-base: 1rem;      /* 16px — real */
+  --text-lg:   1.125rem;  /* 18px — inferred */
+  --text-xl:   1.25rem;   /* 20px — real */
+  --text-2xl:  1.625rem;  /* 26px — real */
+  --text-3xl:  2rem;      /* 32px — inferred */
+  --text-4xl:  2.625rem;  /* 42px — real, H2 */
+  --text-5xl:  3.125rem;  /* 50px — real, hero H1 */
+  --text-6xl:  4rem;      /* 64px — real, Astra H1 fallback */
+
+  /* ── Typography: Font Weights ───────────────────────────── */
+  --font-light:     300;
+  --font-normal:    400;
+  --font-medium:    500;
+  --font-semibold:  600; /* real — buttons, H1/H2 */
+  --font-bold:      700;
+  --font-extrabold: 800;
+
+  /* ── Typography: Line Heights ───────────────────────────── */
+  --leading-tight:   1.0;  /* real — stat callouts */
+  --leading-snug:    1.14; /* real — H2 */
+  --leading-normal:  1.5;  /* real — body text */
+  --leading-relaxed: 1.55; /* real — testimonial copy */
+
+  /* ── Typography: Letter Spacing ──────────────────────────── */
+  --tracking-normal: 0em; /* real — no tracking used anywhere on-site */
+
+  /* ── Spacing ────────────────────────────────────────────── */
+  --space-1:  4px;  /* inferred */
+  --space-2:  8px;  /* real — badge padding */
+  --space-3:  12px; /* close to real 10-14px */
+  --space-4:  16px; /* real — mobile card margin */
+  --space-5:  20px; /* real — card padding */
+  --space-6:  24px; /* close to real 21-22px */
+  --space-8:  32px; /* inferred */
+  --space-10: 40px; /* real — container gap */
+  --space-12: 48px; /* inferred */
+  --space-16: 64px; /* inferred */
+  --space-20: 80px; /* inferred */
+  --space-24: 96px; /* inferred */
+
+  /* ── Border Radius ──────────────────────────────────────── */
+  --radius-none: 0;
+  --radius-sm:   8px;   /* inferred */
+  --radius-md:   14px;  /* real — dark testimonial card */
+  --radius-lg:   25px;  /* real — dominant site radius */
+  --radius-xl:   30px;  /* real — larger feature panels */
+  --radius-2xl:  40px;  /* inferred */
+  --radius-full: 999px; /* real — badges, dots */
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.12);   /* inferred */
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.16);  /* inferred */
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.20); /* real — testimonial card */
+  --shadow-xl: 0 16px 36px rgba(0,0,0,0.24); /* inferred */
+
+  /* ── Motion ─────────────────────────────────────────────── */
+  --duration-fast:   150ms; /* inferred */
+  --duration-normal: 300ms; /* real — dominant transition:background 0.3s (74x) */
+  --duration-slow:   350ms; /* real — testimonial carousel slide */
+
+  --ease-default: ease; /* real — only easing keyword found on-site, no custom cubic-bezier */
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --container-max:    1200px; /* real */
+  --container-narrow: 750px;  /* real */
+  --breakpoint-mobile:  767px;  /* real */
+  --breakpoint-tablet:  768px;  /* real */
+  --breakpoint-desktop: 1024px; /* real */
+}
+
+/* ── Dark Mode ────────────────────────────────────────────── */
+/* Not detected on source site — no prefers-color-scheme or [data-theme]
+   overrides exist. The --color-dark-* tokens above belong to a single
+   bespoke testimonial-card component, not a site-wide dark theme. */
